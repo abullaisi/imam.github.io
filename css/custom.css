@@ -257,6 +257,20 @@ footer {
   color: #e0e3eb;
 }
 
+/* CARD
+-------------------------------------------------- */
+.card {
+  border: 0px solid;
+  border-radius: 1rem;
+}
+.card-img,
+.card-img-top {
+  border-radius: 1rem;
+}
+.card-body {
+  padding: 0px;
+}
+
 /* CAROUSEL
 -------------------------------------------------- */
 
@@ -285,7 +299,6 @@ footer {
 
 /* CONTENT
 -------------------------------------------------- */
-
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
