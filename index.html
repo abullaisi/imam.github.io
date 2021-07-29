@@ -8,12 +8,15 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
-    <!-- Bootstrap Icons -->
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <script src="https://kit.fontawesome.com/494cdd0c44.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
 
     <!-- Local CSS -->
     <link rel="stylesheet" href="css/custom.css" />
 
+    <link rel="icon" href="img/IA-logo-icon.png" type = "image/x-icon">
     <title>Imam Abullaisi</title>
   </head>
   <body>
@@ -23,7 +26,7 @@
     <!-- Nav -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">IA</a>
+        <a class="navbar-brand" href="#"><img src="img/IA-logo-icon.png" style="max-width: 2.5rem;"/></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -138,7 +141,7 @@
           <div class="carousel-item active">
             <div class="container">
               <div class="carousel-caption text-start">
-                <h1>Example headline.</h1>
+                <h3>Example headline.</h3>
                 <p>Some representative placeholder content for the first slide of the carousel.</p>
               </div>
             </div>
@@ -146,7 +149,7 @@
           <div class="carousel-item">
             <div class="container">
               <div class="carousel-caption">
-                <h1>Another example headline.</h1>
+                <h3>Another example headline.</h3>
                 <p>Some representative placeholder content for the second slide of the carousel.</p>
               </div>
             </div>
@@ -154,7 +157,7 @@
           <div class="carousel-item">
             <div class="container">
               <div class="carousel-caption text-end">
-                <h1>One more for good measure.</h1>
+                <h3>One more for good measure.</h3>
                 <p>Some representative placeholder content for the third slide of this carousel.</p>
               </div>
             </div>
@@ -183,7 +186,7 @@
             </div>
             <div class="col-md-6 d-flex align-items-center">
               <div class="ms-md-auto mx-auto me-md-0 text-center">
-                 <a href="#"><button type="button" class="btn btn-outline-primary mb-2 text-center"><i class="bi bi-file-earmark-arrow-down-fill"></i>&nbsp&nbsp See CV</button></a>&nbsp&nbsp&nbsp&nbsp<a href="mailto:iabullaisi@gmail.com"><button class="btn btn-primary mb-2 text-center type="button"><i class="bi bi-envelope-fill"></i>&nbsp&nbsp&nbsp Email Me</button></a>
+                 <a href="#"><button type="button" class="btn btn-outline-primary mb-2 text-center"><i class="bi bi-file-earmark-arrow-down-fill"></i>&nbsp&nbsp See CV</button></a>&nbsp&nbsp&nbsp&nbsp<a href="mailto:iabullaisi@gmail.com"><button class="btn btn-primary mb-2 text-center" type="button"><i class="bi bi-envelope-fill"></i>&nbsp&nbsp&nbsp Email Me</button></a>
                 </div>
               </div>
             </div>
@@ -195,18 +198,25 @@
 
     <!-- Footer -->
     <footer class="text-center">
-      <a class="footer-icon" href="https://www.linkedin.com/in/abullaisi/" title="LinkedIn" target="blank"
-        ><button type="button" class="btn btn-icon"><span class="iconify align-top" data-icon="akar-icons:linkedin-fill" data-inline="false"></span></button
-      ></a>
-      <a class="footer-icon" href="https://github.com/abullaisi" title="GitHub" target="blank"
-        ><button type="button" class="btn btn-icon"><span class="iconify align-top" data-icon="akar-icons:github-fill" data-inline="false"></span></button
-      ></a>
-      <a class="footer-icon" href="https://behance.net/abullaisi" title="Behance" target="blank"
-        ><button type="button" class="btn btn-icon"><span class="iconify align-top" data-icon="cib:behance" data-inline="false"></span></button
-      ></a>
-      <a class="footer-icon" href="https://dribbble.com/abullaisi" title="Dribbble" target="blank"
-        ><button type="button" class="btn btn-icon"><span class="iconify align-top" data-icon="akar-icons:dribbble-fill" data-inline="false"></span></button
-      ></a>
+      <div class="container g-5">
+       <div class="icon-wrapper">
+           <a href="https://www.linkedin.com/in/abullaisi/" title="LinkedIn" target="blank"><button type="button" class="btn btn-icon"><i class="fab fa-linkedin"></i></button></a>
+        </div>
+        <div class="icon-wrapper">
+            <a href="https://github.com/abullaisi" title="GitHub" target="blank"
+              ><button type="button" class="btn btn-icon"><i class="fab fa-github"></i></button>
+            </a>
+        </div>
+        <div class="icon-wrapper"><a href="https://behance.net/abullaisi" title="Behance" target="blank"
+               ><button type="button" class="btn btn-icon"><i class="fab fa-behance"></i></button
+              ></a>
+        </div>
+        <div class="icon-wrapper">
+                <a chref="https://dribbble.com/abullaisi" title="Dribbble" target="blank"
+              ><button type="button" class="btn btn-icon"><i class="fab fa-dribbble"></i></button
+            ></a>
+          </div>
+      </div>
     </footer>
     <!-- End of Footer -->
 

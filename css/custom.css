@@ -1,19 +1,22 @@
 body {
-  color: #e5e5e5;
-  background: #121212;
+  color: #e0e3eb;
+  background: #14171f;
   font-family: "PlusJakartaSans";
+  font-weight: 400;
 }
 a {
-  color: yellow;
+  color: #f9d941;
 }
 @font-face {
   font-family: PlusJakartaSans;
   src: url(fonts/PlusJakartaSans-Regular.woff);
+  font-weight: 400;
 }
 @font-face {
   font-family: PlusJakartaSans;
   src: url(fonts/PlusJakartaSans-Italic.woff);
   font-style: italic;
+  font-weight: 400;
 }
 @font-face {
   font-family: PlusJakartaSans;
@@ -56,77 +59,200 @@ h6 {
   font-weight: bold;
 }
 
+.bg-dark {
+  background-color: #1f232e !important;
+}
+
 section {
   padding-top: 5rem;
 }
 
 footer {
-  background: #222222;
+  background: #1f232e;
   padding: 5rem 0;
 }
 #cta {
-  background: #222222;
+  background: #1f232e;
 }
-.btn:focus {
-  box-shadow: 0 0 0 0.25rem rgba(199, 174, 52, 0.863);
-}
-.btn-primary {
-  color: #121212;
-  background: yellow;
-  border-color: yellow;
-  font-weight: bold;
+
+/* BUTTON
+-------------------------------------------------- */
+.btn {
   padding: 0.5rem 1rem;
+  color: #212529;
+  font-weight: bold;
+  border-radius: 0.5rem;
+}
+.btn:hover {
+  color: #212529;
+}
+.btn-check:focus + .btn,
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(249, 217, 65, 0.25);
+}
+
+.btn-primary {
+  color: #14171f;
+  background-color: #f9d941;
+  border-color: #f9d941;
 }
 .btn-primary:hover {
-  color: yellow;
-  background: transparent;
-  border-color: yellow;
+  color: #14171f;
+  background-color: #f8d012;
+  border-color: #cfac07;
 }
-.btn-primary:active {
-  background: yellow;
-  box-shadow: 0 0 0 0.25rem rgba(199, 174, 52, 0.863);
-}
+.btn-check:focus + .btn-primary,
 .btn-primary:focus {
-  color: #121212;
-  background-color: yellow;
-  border-color: yellow;
-  box-shadow: 0 0 0 0.25rem rgba(199, 174, 52, 0.863);
+  color: #14171f;
+  background-color: #f8d012;
+  border-color: #cfac07;
+  box-shadow: 0 0 0 0.25rem rgba(250, 225, 107, 0.5);
 }
+.btn-check:checked + .btn-primary,
+.btn-check:active + .btn-primary,
+.btn-primary:active,
+.btn-primary.active,
+.show > .btn-primary.dropdown-toggle {
+  color: #14171f;
+  background-color: #cfac07;
+  border-color: #9e8305;
+}
+.btn-check:checked + .btn-primary:focus,
+.btn-check:active + .btn-primary:focus,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(250, 225, 107, 0.5);
+}
+
 .btn-outline-primary {
-  color: yellow;
-  border-color: yellow;
-  font-weight: bold;
-  padding: 0.5rem 1rem;
+  color: #f9d941;
+  border-color: #f9d941;
 }
 .btn-outline-primary:hover {
-  color: #121212;
-  border-color: yellow;
-  background: yellow;
+  color: #14171f;
+  background-color: #f9d941;
+  border-color: #f9d941;
 }
-.btn-icon {
-  font-size: 1.5rem;
-  color: yellow;
-  background: transparent;
-  padding: 1rem;
-  border: 1px solid;
-  border-color: transparent;
+.btn-check:focus + .btn-outline-primary,
+.btn-outline-primary:focus {
+  box-shadow: 0 0 0 0.25rem rgba(249, 217, 65, 0.5);
+}
+.btn-check:checked + .btn-outline-primary,
+.btn-check:active + .btn-outline-primary,
+.btn-outline-primary:active,
+.btn-outline-primary.active,
+.btn-outline-primary.dropdown-toggle.show {
+  color: #14171f;
+  background-color: #f9d941;
+  border-color: #f9d941;
+}
+.btn-check:checked + .btn-outline-primary:focus,
+.btn-check:active + .btn-outline-primary:focus,
+.btn-outline-primary:active:focus,
+.btn-outline-primary.active:focus,
+.btn-outline-primary.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(249, 217, 65, 0.5);
+}
+.btn-outline-primary:disabled,
+.btn-outline-primary.disabled {
+  color: #f9d941;
+  background-color: transparent;
+}
+
+.icon-wrapper {
   display: inline-block;
+}
+#btn-icon {
+  padding: 1rem;
   width: 58px;
   height: 58px;
-  border-radius: 10px;
   margin: 0 10px;
   margin-bottom: 10px;
 }
-.btn-icon:hover {
-  color: #121212;
-  background: yellow;
+
+.btn-icon {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: #f9d941;
+  border-color: transparent;
 }
-.btn-icon:active {
-  color: #121212;
-  background: yellow;
+.btn-icon:hover {
+  color: #14171f;
+  background-color: #f9d941;
+  border-color: #f9d941;
+}
+.btn-check:focus + .btn-icon,
+.btn-icon:focus {
+  box-shadow: 0 0 0 0.25rem rgba(249, 217, 65, 0.5);
+}
+.btn-check:checked + .btn-icon,
+.btn-check:active + .btn-icon,
+.btn-icon:active,
+.btn-icon.active,
+.btn-icon.dropdown-toggle.show {
+  color: #14171f;
+  background-color: #f9d941;
+  border-color: #f9d941;
+}
+.btn-check:checked + .btn-icon:focus,
+.btn-check:active + .btn-icon:focus,
+.btn-icon:active:focus,
+.btn-icon.active:focus,
+.btn-icon.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(249, 217, 65, 0.5);
+}
+.btn-icon:disabled,
+.btn-icon.disabled {
+  color: #f9d941;
+  background-color: transparent;
 }
 
-/* CUSTOMIZE THE CAROUSEL
+/* NAVBAR
+-------------------------------------------------- */
+.nav-link {
+  font-weight: bold;
+}
+
+.navbar-dark .navbar-brand {
+  color: #e0e3eb;
+}
+.navbar-dark .navbar-brand:hover,
+.navbar-dark .navbar-brand:focus {
+  color: #e0e3eb;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.55);
+}
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: rgba(255, 255, 255, 0.75);
+}
+.navbar-dark .navbar-nav .nav-link.disabled {
+  color: rgba(255, 255, 255, 0.25);
+}
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #e0e3eb;
+}
+.navbar-dark .navbar-toggler {
+  color: rgba(255, 255, 255, 0.55);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-dark .navbar-text {
+  color: rgba(255, 255, 255, 0.55);
+}
+.navbar-dark .navbar-text a,
+.navbar-dark .navbar-text a:hover,
+.navbar-dark .navbar-text a:focus {
+  color: #e0e3eb;
+}
+
+/* CAROUSEL
 -------------------------------------------------- */
 
 /* Carousel base class */
@@ -136,6 +262,7 @@ footer {
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
+  color: #e0e3eb;
 }
 
 /* Declare heights because of positioning of img element */
