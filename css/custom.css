@@ -214,10 +214,15 @@ footer {
 .nav-link {
   font-weight: bold;
 }
-
+.navbar-brand-logo {
+  font-weight: 800;
+  font-size: 2rem;
+  color: #f9d941;
+}
 .navbar-dark .navbar-brand {
   color: #e0e3eb;
 }
+
 .navbar-dark .navbar-brand:hover,
 .navbar-dark .navbar-brand:focus {
   color: #e0e3eb;
