@@ -90,13 +90,13 @@ section {
 
 footer {
   background: #1f232e;
-  padding: 5rem 0;
+  padding: 4rem 0;
 }
 #cta {
   background: #1f232e;
 }
 .tools img {
-  filter: grayscale(100%);
+  filter: grayscale(0%);
   height: 80px;
 }
 .tools p {
