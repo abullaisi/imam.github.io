@@ -1,12 +1,3 @@
-body {
-  color: #e0e3eb;
-  background: #14171f;
-  font-family: "PlusJakartaSans";
-  font-weight: 400;
-}
-a {
-  color: #f9d941;
-}
 @font-face {
   font-family: PlusJakartaSans;
   src: url(fonts/PlusJakartaSans-Regular.woff);
@@ -42,6 +33,22 @@ a {
   font-weight: 800;
   font-style: italic;
 }
+
+body {
+  color: #e0e3eb;
+  background: #14171f;
+  font-family: "PlusJakartaSans";
+  font-weight: 400;
+}
+a {
+  color: #f9d941;
+}
+a:hover {
+  color: #f8d012;
+}
+a:active {
+  color: #cfac07;
+}
 .h1 {
   font-weight: 800;
 }
@@ -58,13 +65,27 @@ h5,
 h6 {
   font-weight: bold;
 }
+.h2 a,
+.h3 a,
+.h4 a,
+.h5 a,
+.h6 a,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  text-decoration: none;
+}
 
 .bg-dark {
   background-color: #1f232e !important;
 }
 
 section {
-  padding-top: 5rem;
+  margin-top: 2.5rem;
+  padding-top: 2.5rem;
 }
 
 footer {
@@ -73,6 +94,13 @@ footer {
 }
 #cta {
   background: #1f232e;
+}
+.tools img {
+  filter: grayscale(100%);
+  height: 80px;
+}
+.tools p {
+  margin-top: 2rem;
 }
 
 /* BUTTON
@@ -277,6 +305,8 @@ footer {
 /* Carousel base class */
 .carousel {
 }
+#myCarousel {
+}
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   bottom: 3rem;
@@ -285,9 +315,26 @@ footer {
 }
 
 /* Declare heights because of positioning of img element */
+.carousel-inner {
+}
 .carousel-item {
-  height: 20rem;
+  height: 16rem;
   background-color: transparent;
+}
+@media only screen and (max-width: 768px) {
+  .carousel-item {
+    height: 22rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .carousel-item {
+    height: 24rem;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .carousel-item {
+    height: 26rem;
+  }
 }
 .carousel-item > img {
   position: absolute;
