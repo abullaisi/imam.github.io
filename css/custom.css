@@ -33,7 +33,10 @@
   font-weight: 800;
   font-style: italic;
 }
-
+::selection {
+  color: #14171f;
+  background: #f9d941;
+}
 body {
   color: #e0e3eb;
   background: #14171f;
