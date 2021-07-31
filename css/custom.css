@@ -39,6 +39,7 @@ body {
   background: #14171f;
   font-family: "PlusJakartaSans";
   font-weight: 400;
+  font-size: 16px;
 }
 a {
   color: #f9d941;
@@ -85,15 +86,25 @@ h6 a {
 
 section {
   margin-top: 2.5rem;
-  padding-top: 2.5rem;
+  padding: 2.5rem 0;
 }
-
+.hero {
+  padding-top: 7.5rem;
+  padding-bottom: 1rem;
+}
 footer {
   background: #1f232e;
-  padding: 4rem 0;
+  padding: 2.5rem 0;
 }
 #cta {
   background: #1f232e;
+  padding-top: 5rem;
+}
+#testi img {
+  filter: grayscale(100%);
+}
+#testi {
+  background: #1f1d14;
 }
 .tools img {
   filter: grayscale(0%);
@@ -272,6 +283,7 @@ footer {
 .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.55);
   border-color: rgba(255, 255, 255, 0.1);
+  padding: 0.25rem 0.5rem;
 }
 .navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -323,17 +335,17 @@ footer {
 }
 @media only screen and (max-width: 768px) {
   .carousel-item {
-    height: 22rem;
+    height: 23rem; /* Default 22rem */
   }
 }
 @media only screen and (max-width: 576px) {
   .carousel-item {
-    height: 24rem;
+    height: 27rem; /* Default 24rem */
   }
 }
 @media only screen and (max-width: 375px) {
   .carousel-item {
-    height: 26rem;
+    height: 30rem; /* Default 26rem */
   }
 }
 .carousel-item > img {
