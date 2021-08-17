@@ -48,6 +48,9 @@ body {
   font-weight: 400;
   font-size: 16px;
 }
+p {
+  color: #c2c8d6;
+}
 a {
   color: #f9d941;
 }
@@ -99,6 +102,11 @@ section {
   padding-top: 7.5rem;
   padding-bottom: 1rem;
 }
+.lead {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #f9d941;
+}
 footer {
   background: #1f232e;
   padding: 2.5rem 0;
@@ -111,7 +119,7 @@ footer {
   filter: grayscale(100%);
 }
 #testi {
-  background: #1f1d14;
+  background: #0f0e0a;
 }
 .tools img {
   filter: grayscale(0%);
@@ -175,6 +183,7 @@ footer {
 .btn-outline-primary {
   color: #f9d941;
   border-color: #f9d941;
+  border: 2px solid;
 }
 .btn-outline-primary:hover {
   color: #14171f;
