@@ -102,6 +102,12 @@ section {
   padding-top: 7.5rem;
   padding-bottom: 1rem;
 }
+.hero p a {
+  color: #e0e3eb;
+}
+.hero p a:hover {
+  color: #f8d012;
+}
 .lead {
   font-size: 1.25rem;
   font-weight: 700;
@@ -136,6 +142,7 @@ footer {
   color: #212529;
   font-weight: bold;
   border-radius: 0.5rem;
+  border: 2px solid;
 }
 .btn:hover {
   color: #212529;
@@ -183,7 +190,6 @@ footer {
 .btn-outline-primary {
   color: #f9d941;
   border-color: #f9d941;
-  border: 2px solid;
 }
 .btn-outline-primary:hover {
   color: #14171f;
