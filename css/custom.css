@@ -337,10 +337,6 @@ footer {
 -------------------------------------------------- */
 
 /* Carousel base class */
-.carousel {
-}
-#myCarousel {
-}
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   bottom: 3rem;
@@ -349,8 +345,6 @@ footer {
 }
 
 /* Declare heights because of positioning of img element */
-.carousel-inner {
-}
 .carousel-item {
   height: 16rem;
   background-color: transparent;
