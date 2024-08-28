@@ -1,1 +1,6 @@
 npm run lint
+
+npm run format
+
+# npm run commitlint --edit "$1"
+

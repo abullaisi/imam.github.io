@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import type { ReactElement } from 'react'
 
+import Navbar from '@/components/layouts/navbar'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -18,7 +20,10 @@ export default function RootLayout({
 }>): ReactElement {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`min-h-screen ${inter.className}`}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   )
 }
