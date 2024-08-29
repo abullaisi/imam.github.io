@@ -20,7 +20,7 @@ export default function RootLayout({
 }>): ReactElement {
   return (
     <html lang="en">
-      <body className={`min-h-screen ${inter.className}`}>
+      <body className={`min-h-screen bg-gray-50 ${inter.className}`}>
         <Navbar />
         {children}
       </body>

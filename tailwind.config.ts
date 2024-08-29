@@ -12,6 +12,21 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
+      },
+      fontFamily: {
+        krona: ['Krona One', 'sans-serif'],
+        jakarta: ['Plus Jakarta Sans', 'sans-serif']
+      },
+      colors: {
+        gunmetal: {
+          DEFAULT: '#101828'
+        },
+        primary: {
+          DEFAULT: '#444CE7'
+        },
+        'storm-gray': {
+          DEFAULT: '#475467'
+        }
       }
     }
   },
