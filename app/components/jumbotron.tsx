@@ -9,10 +9,12 @@ const Jumbotron: FC = (): ReactElement => {
   return (
     <div
       className="grid grid-cols-1 items-center justify-center gap-10 bg-gray-50 px-0 lg:grid-cols-2 lg:px-20"
-      style={{ height: 'calc(100vh - 44px)' }}
+      // style={{ height: 'calc(100vh - 44px)' }}
     >
       <div className="px-4 py-5 lg:px-8">
-        <Badge />
+        <Badge type="primary">
+          <Badge type="secondary">Hello!</Badge> I`m Imam
+        </Badge>
         <div className="mt-4 font-krona text-3xl leading-[70px] lg:text-6xl">
           <span className="">A Passionate</span>
           {/* <br /> */}
