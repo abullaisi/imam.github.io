@@ -20,7 +20,7 @@ const Jumbotron: FC = (): ReactElement => {
           {/* <br /> */}
           <div className="">
             UI/UX{' '}
-            <span className="relative border-2 border-[#947EFB]">
+            <span className="relative w-full text-nowrap border-2 border-[#947EFB]">
               <div
                 className="absolute h-4 w-4 border-2 border-[#947EFB] bg-white"
                 style={{ top: '-10px', left: '-10px' }}

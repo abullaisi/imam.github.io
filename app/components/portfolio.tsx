@@ -62,8 +62,8 @@ const Portfolio: FC = (): ReactElement => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center gap-5 px-4 lg:flex-row">
-            <div className="grow text-lg font-medium text-[#101828] lg:order-last">
+          <div className="flex flex-col items-start gap-5 px-4 lg:flex-row">
+            <div className="w-full grow text-lg font-medium text-[#101828] lg:order-last">
               &quot;Imam was amazing - he went above and beyond to make sure the
               project was a success.&quot;
             </div>
@@ -119,8 +119,8 @@ const Portfolio: FC = (): ReactElement => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center gap-5 px-4 lg:flex-row">
-            <div className="grow text-lg font-medium text-[#101828] lg:order-last">
+          <div className="flex flex-col items-start gap-5 px-4 lg:flex-row">
+            <div className="w-full grow text-lg font-medium text-[#101828] lg:order-last">
               &quot;Amazing, Imam can solve any task. His designs are
               attractive, ergonomic and efficient. Will hire again for
               sure.&quot;
