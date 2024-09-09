@@ -1,10 +1,9 @@
 'use client'
 
-import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 
-import Logo from '@/assets/images/Logo.png'
+import LogoIcon from '@/assets/icons/logo-icon'
 
 import Button from '../global/button'
 
@@ -16,7 +15,7 @@ const Navbar: React.FC = () => {
     const handleScroll = (): void => {
       const currentScrollY = window.scrollY
       if (currentScrollY > 50) {
-        setNavBackground('bg-storm-gray')
+        setNavBackground('bg-white drop-shadow-md')
       } else {
         setNavBackground('bg-transparent')
       }
@@ -34,7 +33,7 @@ const Navbar: React.FC = () => {
     >
       <div className="flex flex-wrap items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5">
-          <Image src={Logo} width={36} height={48} alt="Logo" />
+          <LogoIcon />
           <span className="hidden font-krona text-2xl text-gunmetal lg:block">
             Imam Abullaisi
           </span>
@@ -47,7 +46,7 @@ const Navbar: React.FC = () => {
             <svg
               className="h-6 w-6"
               fill="none"
-              stroke="currentColor"
+              stroke="#444CE7"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >

@@ -1,11 +1,14 @@
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css' // Impor stylesheet
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Plus_Jakarta_Sans } from 'next/font/google'
 import './globals.css'
 import type { ReactElement } from 'react'
 
 import Navbar from '@/components/layouts/navbar'
 
-const inter = Inter({ subsets: ['latin'] })
+config.autoAddCss = false // Mencegah Font Awesome menambahkan CSS secara otomatis
+const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Imam Abullaisi',
@@ -20,7 +23,7 @@ export default function RootLayout({
 }>): ReactElement {
   return (
     <html lang="en">
-      <body className={`min-h-screen bg-gray-50 ${inter.className}`}>
+      <body className={`min-h-screen bg-gray-50 ${jakarta.className}`}>
         <Navbar />
         {children}
       </body>

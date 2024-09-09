@@ -6,6 +6,10 @@ import Badge from '@/components/global/badge'
 import Button from '@/components/global/button'
 
 const Jumbotron: FC = (): ReactElement => {
+  const handleMail = (): void => {
+    window.location.href = 'mailto:iabullaisi@gmail.com'
+  }
+
   return (
     <div
       className="grid grid-cols-1 items-center justify-center gap-10 bg-gray-50 px-0 lg:grid-cols-2 lg:px-20"
@@ -48,7 +52,14 @@ const Jumbotron: FC = (): ReactElement => {
         </div>
         <div className="mt-12 flex justify-start gap-3">
           <Button variant="secondary">Read CV</Button>
-          <Button variant="primary">Let`s Talk</Button>
+          <Button
+            variant="primary"
+            onClick={() => {
+              handleMail()
+            }}
+          >
+            Let`s Talk
+          </Button>
         </div>
       </div>
       <div className="flex w-full justify-end bg-[#FEF0C7]">
