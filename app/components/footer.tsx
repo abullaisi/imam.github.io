@@ -13,6 +13,7 @@ import type { FC, ReactElement } from 'react'
 
 import LogoIcon from '@/assets/icons/logo-icon'
 import Button from '@/components/global/button'
+import { handleOpenCV } from '@/lib/utils'
 
 const Footer: FC = (): ReactElement => {
   const handleMail = (): void => {
@@ -20,11 +21,19 @@ const Footer: FC = (): ReactElement => {
   }
 
   return (
-    <div className="flex flex-col gap-16 bg-[#161B26] px-4 py-16 lg:px-20">
+    <div
+      id="footer"
+      className="flex flex-col gap-16 bg-[#161B26] px-4 py-16 lg:px-20"
+    >
       <div className="flex flex-col justify-start gap-12 lg:items-center lg:justify-center">
         <LogoIcon fill="#85888E" />
         <div className="flex flex-col items-center justify-center gap-4">
-          <h6 className="text-start font-krona text-4xl text-[#F5F5F6] lg:text-center lg:text-6xl">
+          <h6
+            className="text-start font-krona text-4xl text-[#F5F5F6] lg:text-center lg:text-6xl"
+            style={{
+              letterSpacing: '-8%'
+            }}
+          >
             Let’s get started on something great
           </h6>
           <span className="text-start text-base text-[#94969C] lg:text-center lg:text-xl">
@@ -35,7 +44,7 @@ const Footer: FC = (): ReactElement => {
       <div className="flex flex-col gap-8 px-0 lg:px-8">
         <hr />
         <div className="flex w-full flex-col justify-between gap-y-8 lg:flex-row">
-          <div className="flex gap-6">
+          <div className="flex flex-wrap gap-6">
             <Link
               href="https://www.upwork.com/freelancers/~018bcc6270715b3e74"
               target="_blank"
@@ -104,6 +113,9 @@ const Footer: FC = (): ReactElement => {
             <Button
               variant="outline"
               className="flex w-full items-center justify-center gap-1 lg:w-fit"
+              onClick={() => {
+                handleOpenCV()
+              }}
             >
               <span>Read CV</span>
               <FontAwesomeIcon

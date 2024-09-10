@@ -4,6 +4,7 @@ import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 
 import LogoIcon from '@/assets/icons/logo-icon'
+import { scrollToSection } from '@/lib/utils'
 
 import Button from '../global/button'
 
@@ -34,7 +35,12 @@ const Navbar: React.FC = () => {
       <div className="flex flex-wrap items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5">
           <LogoIcon />
-          <span className="hidden font-krona text-2xl text-gunmetal lg:block">
+          <span
+            className="hidden font-krona text-2xl text-gunmetal sm:block"
+            style={{
+              letterSpacing: '-8%'
+            }}
+          >
             Imam Abullaisi
           </span>
         </Link>
@@ -65,10 +71,22 @@ const Navbar: React.FC = () => {
           } block w-full justify-end pt-5 transition-all duration-300 ease-in-out lg:flex lg:w-auto lg:items-center lg:pt-0`}
         >
           <div className="flex flex-col gap-3 lg:flex-row">
-            <Button variant="secondary" className="w-full">
+            <Button
+              variant="secondary"
+              className="w-full"
+              onClick={() => {
+                scrollToSection('portfolio', 50)
+              }}
+            >
               Portfolio
             </Button>
-            <Button variant="primary" className="w-full">
+            <Button
+              variant="primary"
+              className="w-full"
+              onClick={() => {
+                scrollToSection('footer', 50)
+              }}
+            >
               Contact
             </Button>
           </div>

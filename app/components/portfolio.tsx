@@ -9,20 +9,25 @@ import type { FC, ReactElement } from 'react'
 
 import AvatarImage from '@/assets/Avatar.png'
 import Avatar1Image from '@/assets/Avatar1.png'
-import Icon from '@/assets/Icon.png'
+import ArrowTopRight from '@/assets/icons/arrow-top-right'
 import MockupCascadeImage from '@/assets/MockupCascade.png'
 import MockupIosImage from '@/assets/MockupIos.png'
 import Badge from '@/components/global/badge'
 
 const Portfolio: FC = (): ReactElement => {
   return (
-    <div className="flex flex-col gap-12 bg-white py-24 pt-12">
+    <div id="portfolio" className="flex flex-col gap-12 bg-white py-24 pt-12">
       <div className="flex flex-col items-center justify-center gap-3 px-4">
-        <Badge className="flex items-center gap-1.5">
+        <Badge className="flex items-center gap-1.5 px-2.5 py-1 text-sm font-medium text-[#3538CD]">
           <div className="h-2 w-2 rounded-full bg-[#6172F3]"></div>
           Featured
         </Badge>
-        <h4 className="font-krona text-4xl font-normal text-[#101828]">
+        <h4
+          className="font-krona text-4xl font-normal text-[#101828]"
+          style={{
+            letterSpacing: '-8%'
+          }}
+        >
           Portfolio
         </h4>
       </div>
@@ -34,10 +39,10 @@ const Portfolio: FC = (): ReactElement => {
         />
         <div className="flex flex-col gap-8 px-4 lg:py-8 lg:pl-28">
           <div className="flex flex-col gap-2 lg:gap-4">
-            <h5 className="text-2xl font-semibold text-[#101828] lg:text-4xl">
-              Cascade Debt Dashboard Design
+            <h5 className="flex items-center text-2xl font-semibold text-[#101828] lg:text-4xl">
+              <span className="pr-2.5">Cascade Debt Dashboard Design</span>
               <Link href="https://www.cascadedebt.com/" target="_blank">
-                <Image src={Icon} alt="" width={12} height={12} />
+                <ArrowTopRight />
               </Link>
             </h5>
             <p className="text-base text-[#475467]">
@@ -92,7 +97,7 @@ const Portfolio: FC = (): ReactElement => {
               &quot;Imam was amazing - he went above and beyond to make sure the
               project was a success.&quot;
             </div>
-            <div className="flex w-[300px] items-center gap-4">
+            <div className="flex w-full flex-wrap items-center gap-4">
               <Image src={AvatarImage} className="h-14 w-14" alt="Client" />
               <div className="flex flex-col gap-1">
                 <div className="flex gap-1">
@@ -123,10 +128,10 @@ const Portfolio: FC = (): ReactElement => {
         <Image src={MockupIosImage} alt="mockup project" />
         <div className="flex flex-col gap-8 px-4 lg:py-8 lg:pr-28">
           <div className="flex flex-col gap-2 lg:gap-4">
-            <h5 className="text-2xl font-semibold text-[#101828] lg:text-4xl">
-              ARK Builders Apps Design
+            <h5 className="flex items-center text-2xl font-semibold text-[#101828] lg:text-4xl">
+              <span className="pr-2.5">ARK Builders Apps Design</span>
               <Link href="https://ark-builders.dev/" target="_blank">
-                <Image src={Icon} alt="" width={12} height={12} />
+                <ArrowTopRight />
               </Link>
             </h5>
             <p className="text-base text-[#475467]">
@@ -181,7 +186,7 @@ const Portfolio: FC = (): ReactElement => {
               attractive, ergonomic and efficient. Will hire again for
               sure.&quot;
             </div>
-            <div className="flex w-[300px] items-center gap-4">
+            <div className="flex w-full flex-wrap items-center gap-4">
               <Image src={Avatar1Image} className="h-14 w-14" alt="Client" />
               <div className="flex flex-col gap-1">
                 <div className="flex gap-1">

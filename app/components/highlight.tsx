@@ -15,7 +15,7 @@ const Highlight: FC = (): ReactElement => {
     },
     {
       title: '10%',
-      subtitle: 'Top Upwork Client'
+      subtitle: 'Top Upwork Talent'
     },
     {
       title: '4.9',
