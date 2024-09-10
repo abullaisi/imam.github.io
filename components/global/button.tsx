@@ -19,7 +19,7 @@ const Button = React.forwardRef<
     const variantStyles = {
       primary: 'text-white bg-primary hover:bg-primary/90 focus:ring-primary',
       secondary:
-        'bg-white text-storm-gray hover:bg-gray-100 focus:ring-storm-gray',
+        'bg-white text-storm-gray hover:bg-gray-100 focus:ring-storm-gray border border-[#D0D5DD]',
       outline:
         'border border-gray-500 text-gray-500 hover:bg-gray-100 focus:ring-gray-500'
     }

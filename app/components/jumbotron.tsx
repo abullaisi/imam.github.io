@@ -1,3 +1,5 @@
+import { faFileLines } from '@fortawesome/free-regular-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import type { FC, ReactElement } from 'react'
 
@@ -80,8 +82,17 @@ const Jumbotron: FC = (): ReactElement => {
             onClick={() => {
               handleOpenCV()
             }}
+            className="flex items-center justify-center gap-3 text-[#344054]"
           >
-            Read CV
+            <span>Read CV</span>
+            <FontAwesomeIcon
+              icon={faFileLines}
+              style={{
+                width: '16px',
+                height: '20px',
+                color: '#344054'
+              }}
+            />
           </Button>
           <Button
             variant="primary"
