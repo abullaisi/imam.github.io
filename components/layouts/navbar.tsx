@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
           <span
             className="hidden font-krona text-2xl text-gunmetal sm:block"
             style={{
-              letterSpacing: '-8%'
+              letterSpacing: '-0.1em'
             }}
           >
             Imam Abullaisi

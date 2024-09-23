@@ -6,7 +6,7 @@ const Highlight: FC = (): ReactElement => {
     subtitle: string
   }> = [
     {
-      title: '4 yrs+',
+      title: '4 y+',
       subtitle: 'Of experience'
     },
     {
@@ -15,7 +15,7 @@ const Highlight: FC = (): ReactElement => {
     },
     {
       title: '10%',
-      subtitle: 'Top Upwork Talent'
+      subtitle: 'Top Upwork talent'
     },
     {
       title: '4.9',

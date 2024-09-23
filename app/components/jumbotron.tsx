@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import type { FC, ReactElement } from 'react'
 
-import Content from '@/assets/Content.png'
+import Content from '@/assets/images/Content.png'
 import Badge from '@/components/global/badge'
 import Button from '@/components/global/button'
 import { handleOpenCV } from '@/lib/utils'
@@ -25,30 +25,29 @@ const Jumbotron: FC = (): ReactElement => {
         >
           <span className="rounded-full border border-[#C7D7FE] bg-white px-2.5 py-0.5">
             Hello!
-          </span>{' '}
-          I`m Imam
+          </span>
+          <span className="ml-3">I`m Imam</span>
         </Badge>
-        <div className="mt-4 font-krona text-3xl leading-[70px] lg:text-6xl">
+        <h1 className="mt-4 text-nowrap font-krona text-3xl leading-[70px] lg:text-6xl">
           <span
             className="font-krona text-[#101828]"
             style={{
-              letterSpacing: '-8%'
+              letterSpacing: '-0.1em'
             }}
           >
             A Passionate
           </span>
-          {/* <br /> */}
           <div
             className="font-krona text-[#101828]"
             style={{
-              letterSpacing: '-8%'
+              letterSpacing: '-0.1em'
             }}
           >
             UI/UX{' '}
             <span
               className="relative w-full text-nowrap border-2 border-[#947EFB] font-krona text-[#101828]"
               style={{
-                letterSpacing: '-8%'
+                letterSpacing: '-0.1em'
               }}
             >
               <div
@@ -70,8 +69,8 @@ const Jumbotron: FC = (): ReactElement => {
               Designer
             </span>
           </div>
-        </div>
-        <div className="mt-6 text-xl text-[#475467]">
+        </h1>
+        <div className="mt-6 text-xl font-normal text-[#475467]">
           Coming from Indonesia, with a solid 4 years+ of multi-design
           experience in web design, mobile app design, graphic design, and
           content creation. (Design hobbyist since junior high school).
@@ -82,9 +81,9 @@ const Jumbotron: FC = (): ReactElement => {
             onClick={() => {
               handleOpenCV()
             }}
-            className="flex items-center justify-center gap-3 text-[#344054]"
+            className="flex items-center justify-center gap-2.5 rounded-[10px] border border-[#D0D5DD] text-[#344054]"
           >
-            <span>Read CV</span>
+            <span className="text-[#344054]">Read CV</span>
             <FontAwesomeIcon
               icon={faFileLines}
               style={{
@@ -99,6 +98,7 @@ const Jumbotron: FC = (): ReactElement => {
             onClick={() => {
               handleMail()
             }}
+            className="border-white/12 rounded-[10px] border-2 shadow-inner"
           >
             Let`s Talk
           </Button>

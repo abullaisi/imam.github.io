@@ -10,8 +10,8 @@ import type { FC, ReactElement } from 'react'
 import AvatarImage from '@/assets/Avatar.png'
 import Avatar1Image from '@/assets/Avatar1.png'
 import ArrowTopRight from '@/assets/icons/arrow-top-right'
+import MockupIosImage from '@/assets/images/MockupIos.png'
 import MockupCascadeImage from '@/assets/MockupCascade.png'
-import MockupIosImage from '@/assets/MockupIos.png'
 import Badge from '@/components/global/badge'
 
 const Portfolio: FC = (): ReactElement => {
@@ -25,7 +25,7 @@ const Portfolio: FC = (): ReactElement => {
         <h4
           className="font-krona text-4xl font-normal text-[#101828]"
           style={{
-            letterSpacing: '-8%'
+            letterSpacing: '-0.1em'
           }}
         >
           Portfolio

@@ -31,7 +31,7 @@ const Footer: FC = (): ReactElement => {
           <h6
             className="text-start font-krona text-4xl text-[#F5F5F6] lg:text-center lg:text-6xl"
             style={{
-              letterSpacing: '-8%'
+              letterSpacing: '-0.1em'
             }}
           >
             Let’s get started on something great
@@ -42,8 +42,7 @@ const Footer: FC = (): ReactElement => {
         </div>
       </div>
       <div className="flex flex-col gap-8 px-0 lg:px-8">
-        <hr />
-        <div className="flex w-full flex-col justify-between gap-y-8 lg:flex-row">
+        <div className="flex w-full flex-col justify-between gap-y-8 border-t border-[#333741] pt-8 lg:flex-row">
           <div className="flex flex-wrap gap-6">
             <Link
               href="https://www.upwork.com/freelancers/~018bcc6270715b3e74"
