@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
     <nav
       className={`sticky top-0 z-10 w-full px-4 py-3 transition-colors duration-300 lg:px-20 lg:py-4 ${navBackground}`}
     >
-      <div className="flex flex-wrap items-center justify-between">
+      <div className="flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5">
           <LogoIcon />
           <span
