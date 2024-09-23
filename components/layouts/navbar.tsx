@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
         <Link href="/" className="flex items-center gap-2.5">
           <LogoIcon />
           <span
-            className="hidden font-krona text-2xl text-gunmetal sm:block"
+            className="font-krona text-2xl text-gunmetal sm:block"
             style={{
               letterSpacing: '-0.1em'
             }}

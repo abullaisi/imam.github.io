@@ -92,12 +92,12 @@ const Portfolio: FC = (): ReactElement => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-start gap-5 px-4 lg:flex-row">
-            <div className="w-full grow text-lg font-medium text-[#101828] lg:order-last">
+          <div className="flex flex-col items-start gap-5 self-stretch px-4 lg:flex-row">
+            <div className="w-full flex-wrap break-all text-lg font-medium text-[#101828] lg:order-last">
               &quot;Imam was amazing - he went above and beyond to make sure the
               project was a success.&quot;
             </div>
-            <div className="flex w-full flex-wrap items-center gap-4">
+            <div className="flex w-full items-center gap-4 lg:w-[300px]">
               <Image src={AvatarImage} className="h-14 w-14" alt="Client" />
               <div className="flex flex-col gap-1">
                 <div className="flex gap-1">
@@ -181,12 +181,12 @@ const Portfolio: FC = (): ReactElement => {
             </div>
           </div>
           <div className="flex flex-col items-start gap-5 px-4 lg:flex-row">
-            <div className="w-full grow text-lg font-medium text-[#101828] lg:order-last">
+            <div className="w-full grow flex-wrap text-lg font-medium text-[#101828] lg:order-last">
               &quot;Amazing, Imam can solve any task. His designs are
               attractive, ergonomic and efficient. Will hire again for
               sure.&quot;
             </div>
-            <div className="flex w-full flex-wrap items-center gap-4">
+            <div className="flex w-full items-center gap-4 lg:w-[300px]">
               <Image src={Avatar1Image} className="h-14 w-14" alt="Client" />
               <div className="flex flex-col gap-1">
                 <div className="flex gap-1">
